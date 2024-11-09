@@ -29,15 +29,16 @@ Make sure you have the following installed:
         npm install
 ## Running the Application
 1. **Start the Server**
-    -In the terminal, run:
+    - In the terminal, run:
     
       ```bash
       cd server
       node index.js
 2. **Start the Client**
-    -In another terminal, run:
+    - In another terminal, run:
     
       ```bash
       cd client
       npm start
+      
 This will start the client on http://localhost:3000 (or the specified port).
