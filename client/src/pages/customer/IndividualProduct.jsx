@@ -23,6 +23,8 @@ const [productCarouselImg3, setProductCarouselImg3] = useState('');
 const [productSizes, setProductSizes] = useState([]);
 const [productPrice, setProductPrice] = useState(0);
 const [productDiscount, setProductDiscount] = useState(0);
+const [productId, setProductId] = useState('');
+const [productCategory, setProductCategory] = useState('');
 
 
 useEffect(()=>{
@@ -41,6 +43,8 @@ const fetchProduct = async () =>{
             setProductSizes(response.data.sizes);
             setProductPrice(response.data.price);
             setProductDiscount(response.data.discount);
+            setProductId(id);
+            setProductCategory(response.data.category)
         }
     )
 }
@@ -66,6 +70,17 @@ const buyNow = async() =>{
         }
     ).catch((err)=>{
         alert("Order failed!!");
+    })
+}
+
+const addWishlist = async() =>{
+    await axios.post('http://localhost:6001/add-wishlist',{userId, productId}).then(
+        (response)=>{
+            alert("product added to wishlist!!");
+            navigate('/wishlist');
+        }
+    ).catch((err)=>{
+        alert("Operation failed!!");
     })
 }
 
@@ -150,7 +165,8 @@ const handleAddToCart = async() =>{
 
                 <div className="productBuyingButtons">
                     <button data-bs-toggle="modal" data-bs-target="#staticBackdrop">Buy now</button>
-                    <button onClick={handleAddToCart}>Add to cart</button>
+                    <button className="btn btn-primary" onClick={handleAddToCart}>Add to cart</button>
+                    <button type="button" className="btn btn-secondary" data-bs-dismiss="modal" onClick={addWishlist}>Add to wishlist</button>
                 </div>
 
             </div>

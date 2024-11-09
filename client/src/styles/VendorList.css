@@ -1,0 +1,56 @@
+.vendor-management-page {
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.vendor-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.vendor-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-card h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.vendor-card p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+.vendor-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.vendor-actions .btn {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vendor-actions .btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+}
+
+.vendor-actions .btn-danger {
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+}
+
+.vendor-actions .btn:hover {
+    opacity: 0.8;
+}

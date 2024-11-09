@@ -3,7 +3,7 @@ import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 import bcrypt from 'bcrypt';
-import {Admin, Cart, Orders, Product, User } from './Schema.js'
+import {Admin, Cart, Orders, Product, User, Vendor, Wishlist } from './Schema.js'
 
 
 const app = express();
@@ -381,6 +381,120 @@ mongoose.connect('mongodb://localhost:27017/shopEZ',{
             res.status(500).json({message: "Error occured"});
         }
     })
+
+
+    app.post('/add-vendor', async (req, res) => {
+        const { vendorName, contactInfo, rating } = req.body;
+        try {
+            const newVendor = new Vendor({
+                vendorName,
+                contactInfo,
+                rating
+            });
+            await newVendor.save();
+            res.status(201).json({ message: 'Vendor added successfully', vendor: newVendor });
+        } catch (err) {
+            res.status(500).json({ message: 'Error occurred while adding vendor', error: err.message });
+        }
+    });
+
+    app.put('/update-vendor/:id', async (req, res) => {
+        const { id } = req.params;
+        const { vendorName, contactInfo, rating } = req.body;
+        try {
+            const updatedVendor = await Vendor.findByIdAndUpdate(
+                id,
+                {
+                    vendorName,
+                    contactInfo,
+                    rating,
+                    updatedAt: Date.now()
+                },
+                { new: true }
+            );
+            res.json({ message: 'Vendor updated successfully', vendor: updatedVendor });
+        } catch (err) {
+            res.status(500).json({ message: 'Error occurred while updating vendor', error: err.message });
+        }
+    });
+
+    app.get('/fetch-vendor-details/:id', async (req, res) => {
+        try {
+          const vendorId = req.params.id;
+          const vendor = await Vendor.findById(vendorId);
+      
+          if (!vendor) {
+            return res.status(404).json({ message: 'Vendor not found' });
+          }
+      
+          res.status(200).json(vendor);
+        } catch (error) {
+          console.error('Error fetching vendor details:', error);
+          res.status(500).json({ message: 'Server error' });
+        }
+      });
+
+
+    app.get('/view-vendors', async (req, res) => {
+        try {
+            const vendors = await Vendor.find();
+            res.json(vendors);
+        } catch (err) {
+            res.status(500).json({ message: 'Error occurred while fetching vendors', error: err.message });
+        }
+    });
+
+    app.delete('/delete-vendor/:id', async (req, res) => {
+        const { id } = req.params;
+        try {
+            await Vendor.findByIdAndDelete(id);
+            res.json({ message: 'Vendor deleted successfully' });
+        } catch (err) {
+            res.status(500).json({ message: 'Error occurred while deleting vendor', error: err.message });
+        }
+    });
+
+    app.get('/fetch-wishlist', async(req, res)=>{
+        try{
+            
+            const items = await Wishlist.find().populate('productId');
+            res.json(items);
+
+        }catch(err){
+            res.status(500).json({message: "Error occured"});
+        }
+    })
+
+
+    // add wishlist item
+
+    app.post('/add-wishlist', async(req, res)=>{
+
+        const {userId, productId} = req.body
+        try{
+
+            const item = new Wishlist({userId, productId});
+            await item.save();
+
+            res.json({message: 'Added to cart'});
+            
+        }catch(err){
+            res.status(500).json({message: "Error occured"});
+        }
+    })
+    
+    app.delete('/remove-wishlist-item/:id', async (req, res) => {
+        const { id } = req.params;
+        try {
+            await Wishlist.findByIdAndDelete(id);
+            res.json({ message: 'wishlist item deleted successfully' });
+        } catch (err) {
+            res.status(500).json({ message: 'Error occurred while deleting item', error: err.message });
+        }
+    });
+    
+    
+    
 
 
 

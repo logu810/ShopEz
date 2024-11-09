@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import {BsCart3, BsPersonCircle} from 'react-icons/bs'
+import { FaHeart } from "react-icons/fa6";
 import {FcSearch} from 'react-icons/fc'
 import '../styles/Navbar.css'
 import { Link, useNavigate } from 'react-router-dom'
@@ -97,6 +98,9 @@ const Navbar = () => {
                         <BsCart3 className='navbar-icons' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Cart" />
                         <div className="cart-count">{cartCount}</div>
                       </div>
+                      <div className="nav-wishlist" onClick={()=> navigate('/wishlist')}>
+                        <FaHeart className='navbar-icons' data-bs-toggle="tooltip" data-bs-placement="bottom" title="Wishlist" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -111,7 +115,7 @@ const Navbar = () => {
                   <li onClick={()=> navigate('/all-users')}>Users</li>
                   <li onClick={()=> navigate('/all-orders')}>Orders</li>
                   <li onClick={()=> navigate('/all-products')}>Products</li>
-                  <li onClick={()=> navigate('/new-product')}>New Product</li>
+                  <li onClick={()=> navigate('/vendor-list')}>Vendors</li>
                   <li onClick={logout}>Logout</li>
                 </ul>
               </div>

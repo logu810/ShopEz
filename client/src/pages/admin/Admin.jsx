@@ -10,6 +10,7 @@ const Admin = () => {
   const [userCount, setUserCount] = useState(0);
   const [productCount, setProductCount] = useState(0);
   const [ordersCount, setOrdersCount] = useState(0);
+  const [vendorsCount, setvendorsCount] = useState(0);
 
   useEffect(()=>{
     if(sessionStorage.getItem('userType') === 'admin'){
@@ -38,6 +39,12 @@ const Admin = () => {
         setOrdersCount(response.data.length);
       }
     )
+    await axios.get('http://localhost:6001/view-vendors').then(
+      (response)=>{
+        setvendorsCount(response.data.length);
+      }
+    )
+
 
   }
 
@@ -87,9 +94,25 @@ const Admin = () => {
 
       <div>
         <div className="admin-home-card">
+          <h5>All Vendors</h5>
+          <p>{vendorsCount}</p>
+          <button onClick={()=> navigate('/vendor-list')}>View all</button>
+        </div>
+      </div>
+
+      <div>
+        <div className="admin-home-card">
           <h5>Add Product</h5>
           <p>(new)</p>
           <button onClick={()=> navigate('/new-product')}>Add now</button>
+        </div>
+      </div>
+
+      <div>
+        <div className="admin-home-card">
+          <h5>Add Vendor</h5>
+          <p>(new)</p>
+          <button onClick={()=> navigate('/add-vendor')}>Add now</button>
         </div>
       </div>
 

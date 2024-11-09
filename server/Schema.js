@@ -49,13 +49,32 @@ const cartSchema = new mongoose.Schema({
     title: {type: String},
     description: {type: String},
     mainImg: {type: String},
-    size: {type: String},
-    quantity: {type: String},
+    carousel: {type: Array},
+    sizes: {type: Array},
+    category: {type: String},
+    gender: {type: String},
     price: {type: Number},
     discount: {type: Number}
 })
 
+const vendorSchema = new mongoose.Schema({
+    vendorName: { type: String, required: true },
+    contactInfo: {
+        email: { type: String, required: true },
+        phone: { type: String, required: true }
+    },
+    rating: { type: Number, min: 0, max: 5, default: 0 },
+    createdAt: { type: Date, default: Date.now },
+    updatedAt: { type: Date, default: Date.now }
+});
 
+const wishlistSchema = new mongoose.Schema({
+    userId: {type: String},
+    productId: { type: mongoose.Schema.Types.ObjectId, ref: "products" }
+})
+
+export const Wishlist = mongoose.model("Wishlist", wishlistSchema);
+export const Vendor = mongoose.model('Vendor', vendorSchema);
 export const User = mongoose.model('users', userSchema);
 export const Admin = mongoose.model('admin', adminSchema);
 export const Product = mongoose.model('products', productSchema);
