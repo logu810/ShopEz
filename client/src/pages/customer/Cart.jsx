@@ -15,7 +15,7 @@ const Cart = () => {
   },[])
 
   const fetchCart = async() =>{
-    const userId = localStorage.getItem('userId');
+    const userId = sessionStorage.getItem('userId');
     if(userId){
       await axios.get('http://localhost:6001/fetch-cart').then(
         (response)=>{
@@ -87,7 +87,7 @@ const Cart = () => {
   const [pincode, setPincode] = useState('');
   const [paymentMethod, setPaymentMethod] = useState('');
 
-  const userId = localStorage.getItem('userId');
+  const userId = sessionStorage.getItem('userId');
   const placeOrder = async() =>{
     if(cartItems.length > 0){
         await axios.post('http://localhost:6001/place-cart-order', {userId, name, mobile, email, address, pincode, paymentMethod, orderDate: new Date()}).then(

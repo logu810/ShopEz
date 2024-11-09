@@ -7,9 +7,9 @@ const Profile = () => {
 
   const {logout} = useContext(GeneralContext);
 
-  const userId = localStorage.getItem('userId');
-  const username = localStorage.getItem('username');
-  const email = localStorage.getItem('email');
+  const userId = sessionStorage.getItem('userId');
+  const username = sessionStorage.getItem('username');
+  const email = sessionStorage.getItem('email');
 
   const [orders, setOrders] = useState([]);
 

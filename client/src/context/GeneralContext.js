@@ -25,7 +25,7 @@ const GeneralContextProvider = ({children}) => {
   }, [])
 
   const fetchCartCount = async() =>{
-    const userId = localStorage.getItem('userId');
+    const userId = sessionStorage.getItem('userId');
     if(userId){
       await axios.get('http://localhost:6001/fetch-cart').then(
         (response)=>{
@@ -49,10 +49,10 @@ const GeneralContextProvider = ({children}) => {
         await axios.post('http://localhost:6001/login', loginInputs)
         .then( async (res)=>{
 
-          localStorage.setItem('userId', res.data._id);
-            localStorage.setItem('userType', res.data.usertype);
-            localStorage.setItem('username', res.data.username);
-            localStorage.setItem('email', res.data.email);
+          sessionStorage.setItem('userId', res.data._id);
+            sessionStorage.setItem('userType', res.data.usertype);
+            sessionStorage.setItem('username', res.data.username);
+            sessionStorage.setItem('email', res.data.email);
             if(res.data.usertype === 'customer'){
                 navigate('/');
             } else if(res.data.usertype === 'admin'){
@@ -74,10 +74,10 @@ const GeneralContextProvider = ({children}) => {
     try{
         await axios.post('http://localhost:6001/register', inputs)
         .then( async (res)=>{
-            localStorage.setItem('userId', res.data._id);
-            localStorage.setItem('userType', res.data.usertype);
-            localStorage.setItem('username', res.data.username);
-            localStorage.setItem('email', res.data.email);
+            sessionStorage.setItem('userId', res.data._id);
+            sessionStorage.setItem('userType', res.data.usertype);
+            sessionStorage.setItem('username', res.data.username);
+            sessionStorage.setItem('email', res.data.email);
 
             if(res.data.usertype === 'customer'){
                 navigate('/');
@@ -98,10 +98,10 @@ const GeneralContextProvider = ({children}) => {
 
   const logout = async () =>{
     
-    localStorage.clear();
-    for (let key in localStorage) {
-      if (localStorage.hasOwnProperty(key)) {
-        localStorage.removeItem(key);
+    sessionStorage.clear();
+    for (let key in sessionStorage) {
+      if (sessionStorage.hasOwnProperty(key)) {
+        sessionStorage.removeItem(key);
       }
     }
     

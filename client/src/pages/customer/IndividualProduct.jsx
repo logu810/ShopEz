@@ -10,7 +10,7 @@ const IndividualProduct = () => {
 const {id} = useParams();
 const navigate = useNavigate()
 
-const userId = localStorage.getItem('userId');
+const userId = sessionStorage.getItem('userId');
 
 const {fetchCartCount} = useContext(GeneralContext);
 

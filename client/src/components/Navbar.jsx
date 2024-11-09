@@ -12,8 +12,8 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
-  const usertype = localStorage.getItem('userType');
-  const username = localStorage.getItem('username');
+  const usertype = sessionStorage.getItem('userType');
+  const username = sessionStorage.getItem('username');
 
   const {cartCount, logout} = useContext(GeneralContext);
 

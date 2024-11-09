@@ -12,10 +12,10 @@ const Admin = () => {
   const [ordersCount, setOrdersCount] = useState(0);
 
   useEffect(()=>{
-    if(localStorage.getItem('userType') === 'admin'){
+    if(sessionStorage.getItem('userType') === 'admin'){
       navigate('/admin')
     }
-  }, [localStorage])
+  }, [sessionStorage])
 
 
   useEffect(()=>{
