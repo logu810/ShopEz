@@ -7,7 +7,7 @@ ShopEZ is an e-commerce platform built with Node.js, React, and MongoDB. It feat
 Make sure you have the following installed:
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/)
-- MongoDB (if the project requires it)
+- MongoDB
 
 ## Installation
 
