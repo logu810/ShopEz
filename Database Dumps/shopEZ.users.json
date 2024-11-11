@@ -1,0 +1,130 @@
+[{
+  "_id": {
+    "$oid": "67306cae7f33aac1ed9ee6ff"
+  },
+  "username": "akhileshram710@gmail.com",
+  "password": "$2b$10$rPVL0n6NLi/aI5Uguii0cuqVGnv83msmgD4hy2hwN9mL5oCtp2g4i",
+  "email": "akhileshram710@gmail.com",
+  "usertype": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673195d47fea66cc56ee25cb"
+  },
+  "username": "Akhilesh",
+  "password": "$2b$10$5NFvcNJzft1EKx1yT5d89O04lN1dD2WA9aSuieohnREmcETzYqLQ6",
+  "email": "akhil@gmail.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "673195f67fea66cc56ee25dc"
+  },
+  "username": "Sethu Vignesh",
+  "password": "$2b$10$5x0Ow98bBxTQOtacTa0nguo5YtHKnIN442uczUbMi57IxstuZ2tHe",
+  "email": "seth@gmail.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c13"
+  },
+  "username": "Anya_Patel",
+  "password": "$2b$10$f1hO3ngj2o4L1p8Vp6XcDeXL7TkM5I8hRgzVUTmSfFUb7MxP9tzXK",
+  "email": "anya_patel88@gmail.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c14"
+  },
+  "username": "Rohan_Singh",
+  "password": "$2b$10$hN9WpGt4Bs3Tb8wEBoWYdeMkY7jRmAK7HTqc.DFfF4izMkE4OIl6C",
+  "email": "rohan.singh32@hotmail.com",
+  "usertype": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c15"
+  },
+  "username": "Priya_Menon",
+  "password": "$2b$10$8Nz.Q4MlUzx.WyLbwPt3lOqDdUb5F5I7oRu8EsT8GOGm7EbPZVC0O",
+  "email": "priyamenon98@yahoo.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c16"
+  },
+  "username": "Vikram.Kumar",
+  "password": "$2b$10$Ld5zMx8hTq8zHLwF2wRz6uGH3rbLp2QFgNzrUf.XzztO/RrPi0fW2",
+  "email": "vikram.kumar@mail.com",
+  "usertype": "vendor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c17"
+  },
+  "username": "Sneha_Rao",
+  "password": "$2b$10$MPO8h8LWxJOhW0YV7K3d1eufLsUuAWoNrjPUaP4.x7FGzTndDQAFq",
+  "email": "sneha_rao@outlook.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c18"
+  },
+  "username": "Rajesh_Pillai",
+  "password": "$2b$10$P1dUz6sx6K2.b/r5TFSIreEKm.W7.JAp5lsdIvD6fMhDQ7.GPvBOG",
+  "email": "rajesh.pillai@gmail.com",
+  "usertype": "vendor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c19"
+  },
+  "username": "AkashM",
+  "password": "$2b$10$0YgIvFA9IcqDiXyLbjHmsOzO1m.BtGRtOvJkBzNoGCN0xWdhbbOxi",
+  "email": "akash.m89@gmail.com",
+  "usertype": "admin",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c1a"
+  },
+  "username": "MeeraVerma",
+  "password": "$2b$10$n0Uw8yMgxh3vwP0HD2KUYOfI9C/MRMBFRFso0A/b7.rCJ8VNoAx6a",
+  "email": "meeraverma123@gmail.com",
+  "usertype": "customer",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c1b"
+  },
+  "username": "Aditya_Ghosh",
+  "password": "$2b$10$D8dSdf6wTnI90rLzRH/fFOpaX5TbJkwYsQQtDAAA/Ta5bUlAsWv2W",
+  "email": "aditya_ghosh@mail.com",
+  "usertype": "vendor",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6731969248e3964fe2358c1c"
+  },
+  "username": "Simran.Kaur",
+  "password": "$2b$10$5bQ0jWXO3Uddp9YxGnLiqOa.gfjZVmLoB6GnQHfFKRg7/EPpoH9Wm",
+  "email": "simrankaur@mailbox.com",
+  "usertype": "customer",
+  "__v": 0
+}]

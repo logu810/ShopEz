@@ -1,0 +1,11 @@
+[{
+  "_id": {
+    "$oid": "67306c8a7f33aac1ed9ee6ef"
+  },
+  "banner": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Shopez.png/1024px-Shopez.png",
+  "categories": [
+    "Fashion",
+    "Electronics"
+  ],
+  "__v": 2
+}]
