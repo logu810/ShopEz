@@ -1,6 +1,6 @@
 .Footer{
 
-    background-color: #3929b4;
+    background-color: #f8991c;
     color: aliceblue;
     padding: 3vh 3vw;
     margin-top: 3vh;
@@ -26,7 +26,7 @@
 
 .footer-body ul li{
     list-style: none;
-    color: rgb(199, 200, 202); 
+    color: rgb(0, 0, 0); 
     cursor: pointer;
 }
 
