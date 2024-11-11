@@ -4,7 +4,7 @@ import '../styles/Footer.css'
 const Footer = () => {
   return (
     <div className="Footer">
-      <h4>@ShopEZ - One Destination for all your needs....</h4>
+      <h4>@ShopEZ - Ease your Shopping Experience with us</h4>
       <div className="footer-body">
 
         <ul>

@@ -92,7 +92,7 @@ const AllOrders = () => {
                             <option value="delivered">Delivered</option>
                           </select>
                         </div>
-                        <button className='btn btn-primary' onClick={()=> updateOrderStatus(order._id)}>Update</button>
+                        <button className='btn btn-primary' style={{ backgroundColor: "#f8991c" }} onClick={()=> updateOrderStatus(order._id)}>Update</button>
                       </span>
                       }
                       

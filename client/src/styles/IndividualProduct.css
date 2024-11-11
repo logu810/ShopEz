@@ -123,9 +123,9 @@
 }
 .productBuyingButtons button:first-child{
     background-color: #504aec;
-    color: aliceblue;
+    color: rgb(0,0,0);
 }
 .productBuyingButtons button:last-child{
     background-color: #eb5a12;
-    color: aliceblue;
+    color: rgb(0,0,0);
 }

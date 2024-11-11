@@ -1,7 +1,7 @@
 .Footer{
 
     background-color: #f8991c;
-    color: aliceblue;
+    color: rgb(0,0,0);
     padding: 3vh 3vw;
     margin-top: 3vh;
 
@@ -32,7 +32,7 @@
 
 .footer-body ul li:hover{
     list-style: none;
-    color: aliceblue; 
+    color: rgb(0,0,0); 
 }
 .footer-bottom{
 
@@ -41,6 +41,6 @@
 
 .footer-bottom p{
     text-align: center;
-    color: rgb(193, 196, 198);
+    color: rgb(0, 0, 0);
     margin: 0;
 }

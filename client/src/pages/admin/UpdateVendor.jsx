@@ -118,7 +118,7 @@ const UpdateVendor = () => {
 
           </span>
 
-          <button className="btn btn-primary" onClick={handleUpdateVendor}>
+          <button className="btn btn-primary" style={{ backgroundColor: "#f8991c" }}  onClick={handleUpdateVendor}>
             Update Vendor
           </button>
         </div>

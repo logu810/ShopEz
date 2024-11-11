@@ -85,7 +85,7 @@ const AddVendor = () => {
                     <label htmlFor="floatingVendorRating">Rating (0-5)</label>
                 </div>
             </div>
-            <button className="btn btn-primary" onClick={handleSubmit}>
+            <button className="btn btn-primary" style={{ backgroundColor: "#f8991c" }}  onClick={handleSubmit}>
                 Add Vendor
             </button>
         </div>
