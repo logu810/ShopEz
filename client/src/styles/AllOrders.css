@@ -1,5 +1,5 @@
 .all-orders-page{
-    background-color: #30373f;
+    background-color: #ffffff;
     height: 100vh;
     width: 100%;
     padding: 15vh 3vw 3vh 3vw;
@@ -29,7 +29,7 @@
     display: flex;
     height: fit-content;
     gap: 30px;
-    background-color: #181818;
+    background-color: #dfd2a8;
     padding: 3vh;
     border: 1px solid #e8e3e350;
     border-radius: 0.8rem;

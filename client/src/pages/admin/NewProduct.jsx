@@ -198,7 +198,9 @@ const NewProduct = () => {
 
           </div>
 
-          <button className='btn btn-primary' onClick={handleNewProduct}>Add product</button>
+          <button className="btn btn-primary" style={{ backgroundColor: "#f8991c" }} onClick={handleNewProduct}>
+  Add product
+</button>
         </div>
     </div>
   )

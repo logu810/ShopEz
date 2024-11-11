@@ -223,7 +223,7 @@ const UpdateProduct = () => {
 
           </div>
 
-          <button className='btn btn-primary' onClick={handleUpdateProduct}>Update</button>
+          <button className='btn btn-primary' style={{ backgroundColor: "#f8991c" }}  onClick={handleUpdateProduct}>Update</button>
         </div>
     </div>
   )

@@ -1,5 +1,5 @@
 .admin-page{
-    background-color: #30373f;
+    background-color: #ffffff;
     height: 100vh;
     width: 100%;
     padding-top: 15vh;
@@ -9,9 +9,9 @@
 
 
 .admin-home-card{
-    color: rgb(193, 199, 205);
+    color: rgb(23, 23, 23);
     text-align: center;
-    background-color: #181818;
+    background-color: #dfd2a8;
     width: 70%;
     margin-left: 15%;
     padding: 4vh 0;
@@ -27,15 +27,15 @@
 .admin-home-card button{
 
     border: 1.5px solid #f08329df;
-    background-color: #30373f00;
-    color: #f08329df;
+    background-color: #ffffff00;
+    color: #050404df;
     padding: 5px 25px;
     border-radius: 0.5rem;
 }
 
 .admin-home-card button:hover{
     background-color: #f08329df;
-    color: aliceblue;
+    color: rgb(0,0,0);
     padding: 5px 25px;
     border-radius: 0.5rem;
 }
@@ -50,13 +50,13 @@
     margin-bottom: 20px;
 }
 .admin-banner-input input{
-    background-color: #181818;
-    color: aliceblue;
+    background-color: #ffffff;
+    color: rgb(0,0,0);
     border: 1px solid #7b7979;
 }
 .admin-banner-input input:focus{
-    background-color: #181818;
-    color: aliceblue;
+    background-color: #ffffff;
+    color: #181818;
     outline: none;
 }
 .admin-banner-input button{

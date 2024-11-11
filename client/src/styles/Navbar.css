@@ -12,7 +12,7 @@
 .navbar h3{
 
     margin: 0;
-    color: aliceblue;
+    color: rgb(0,0,0);
     margin-left: 3vw;
     cursor: pointer;
 }
@@ -75,8 +75,8 @@
 
     margin: 0 30px 0 0;
     padding: 0;
-    border: 1px solid aliceblue;
-    color: aliceblue;
+    border: 1px solid rgb(0,0,0);
+    color: rgb(0,0,0);
     padding: 3px 20px 5px 20px;
     border-radius: 0.5rem;
     font-weight: 600;
@@ -106,7 +106,7 @@ display: flex;
 .nav-cart .cart-count{
     position: relative;
     top: -10px;
-    /* color: aliceblue; */
+    /* color: rgb(0,0,0); */
     font-size: 0.7rem;
     color: rgb(254, 218, 255);
 }
@@ -118,7 +118,7 @@ display: flex;
 }
 .nav-profile p{
     margin: 0;
-    color: aliceblue;
+    color: rgb(0,0,0);
 }
 
 .navbar-icons{
