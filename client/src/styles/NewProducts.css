@@ -1,5 +1,5 @@
 .new-product-page{
-    background-color: #30373f;
+    background-color: #dfd2a8;
     height: 100vh;
     width: 100%;
     padding-top: 15vh;
@@ -8,7 +8,7 @@
 
 .new-product-container{
 
-    background-color: #181818;
+    background-color: #dfd2a8;
     padding: 3vh 2vw;
     width: 54vw;
     margin-left: 25vw;
@@ -18,7 +18,7 @@
 .new-product-container h3{
 
     text-align: center;
-    color: aliceblue;
+    color: rgb(6, 6, 6);
     margin-bottom: 3vh;
 }
 
@@ -62,25 +62,25 @@
 }
 
 .new-product-body input{
-    background-color: #30373f25;
+    background-color: #ffffff25;
     border-color: #67646489;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .new-product-body input:focus{
     outline: none;
-    background-color: #30373f25;
+    background-color: #ffffff25;
     border-color: #67646489;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .new-product-body label{
-    color: rgba(240, 248, 255, 0.84);
+    color: rgba(0, 0, 0, 0.84);
 }
 
 .new-product-body span select{
 
-    background-color: #30373f25;
+    background-color: #ffffff25;
     border-color: #67646489;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 }
 .new-product-body span option{
 
@@ -93,7 +93,7 @@
 }
 
 .new-product-body section h4{
-    color: aliceblue;
+    color: rgb(0, 0, 0);
 
 }
 
@@ -105,5 +105,5 @@
 
 .new-product-body section span label{
 
-    color: rgba(240, 248, 255, 0.658);
+    color: rgba(0, 0, 0, 0.658);
 }

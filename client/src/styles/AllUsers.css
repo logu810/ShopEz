@@ -1,5 +1,5 @@
 .all-users-page{
-    background-color: #30373f;
+    background-color: #ffffff;
     height: 100vh;
     width: 100%;
     padding: 15vh 3vw 3vh 3vw;
@@ -7,7 +7,7 @@
 
 .all-users-page h3{
 
-    color: aliceblue;
+    color: rgb(0,0,0);
 }
 
 .user-cards{
@@ -23,10 +23,10 @@
 
 .user-card{
 
-    color: aliceblue;
+    color: rgb(0,0,0);
     display: flex;
     gap: 40px;
-    background-color: #181818;
+    background-color: #dfd2a8;
     padding: 3vh 2vw;
     width: 65vw;
     border-radius: 0.8rem;
@@ -40,11 +40,11 @@
 .user-card span h5{
 
     font-weight: 400;
-    color: rgb(231, 234, 238);
+    color: rgb(0,0,0);
 }
 
 .user-card span p{
-    color: rgba(231, 234, 238, 0.831);
+    color: rgba(0,0,0);
     margin: 0;
 }
 
